@@ -15,9 +15,9 @@ class Useronline {
         $objResult = $objDatabase->query("SELECT ip FROM tl_useronline WHERE ip = INET_ATON('" . $_SERVER['REMOTE_ADDR'] . "')");
 
         if($objResult->count() > 0) {
-            $objDatabase->query("UPDATE tl_useronline SET tstamp = NOW() WHERE ip = INET_ATON('" . $_SERVER['REMOTE_ADDR'] . "')");
+            $objDatabase->query("UPDATE tl_useronline SET tstamp = " . time() . " WHERE ip = INET_ATON('" . $_SERVER['REMOTE_ADDR'] . "')");
         } else {
-            $objDatabase->query("INSERT INTO tl_useronline (ip, tstamp) VALUES (INET_ATON('" . $_SERVER['REMOTE_ADDR'] . "'), NOW())");
+            $objDatabase->query("INSERT INTO tl_useronline (ip, tstamp) VALUES (INET_ATON('" . $_SERVER['REMOTE_ADDR'] . "'), " . time() . ")");
         }
         $this->deleteOldEntries();
     }
@@ -37,6 +37,6 @@ class Useronline {
     public function deleteOldEntries()
     {
         $objDatabase = \Database::getInstance();
-        $objDatabase->query("DELETE FROM tl_useronline WHERE DATE_SUB(NOW(), INTERVAL 5 MINUTE) > tstamp");
+        $objDatabase->query("DELETE FROM tl_useronline WHERE " . (time() - 300) . " > tstamp");
     }
 }
