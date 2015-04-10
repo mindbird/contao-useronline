@@ -1,0 +1,2 @@
+<h2>Benutzer online</h2>
+<p>Innerhlab der letzten 5 Minuten waren <?= $this->intVisitorOnline; ?> Benutzer online.</p>
