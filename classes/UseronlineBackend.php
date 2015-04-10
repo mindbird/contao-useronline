@@ -9,7 +9,7 @@
 namespace Useronline;
 
 
-class Backend {
+class UseronlineBackend {
     public function generatePageHook(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
     {
         $objDatabase = \Database::getInstance();
