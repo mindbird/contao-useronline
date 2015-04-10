@@ -6,5 +6,5 @@
  * Time: 20:58
  */
 
-$GLOBALS['TL_HOOKS']['generatePage'][] = array('Useronline\UseronlineBackend', 'generatePageHook');
-$GLOBALS['TL_HOOKS']['getSystemMessages'][] = array('Useronline\UseronlineBackend', 'addSystemMessages');
+$GLOBALS['TL_HOOKS']['generatePage'][] = array('Useronline\Useronline', 'generatePageHook');
+$GLOBALS['TL_HOOKS']['getSystemMessages'][] = array('Useronline\Useronline', 'addSystemMessages');

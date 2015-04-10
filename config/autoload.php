@@ -19,7 +19,7 @@ ClassLoader::addNamespaces(array
 ClassLoader::addClasses(array
 (
     // Classes
-    'Useronline\Backend' => 'system/modules/useronline/classes/UseronlineBackend.php',
+    'Useronline\Useronline' => 'system/modules/useronline/classes/Useronline.php',
 ));
 /**
  * Register the templates
