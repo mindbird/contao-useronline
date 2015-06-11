@@ -1,9 +1,9 @@
 {
   "name": "mindbird/contao-useronline",
-  "description": "Anzeigen eines Changelogs auf der Backendstartseite",
+  "description": "Gibt eine kurze Übersicht wie viele Benutzer in den letzten 5 Minuten auf der Webseite aktiv waren.",
   "minimum-stability": "stable",
   "license": "proprietary",
-  "keywords":["contao", "user", "online"],
+  "keywords":["contao", "user", "online", "website"],
   "type":"contao-module",
   "authors": [
     {
