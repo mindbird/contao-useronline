@@ -1,0 +1,25 @@
+{
+  "name": "mindbird/contao-useronline",
+  "description": "Anzeigen eines Changelogs auf der Backendstartseite",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "keywords":["contao", "user", "online"],
+  "type":"contao-module",
+  "authors": [
+    {
+      "name": "mindbird",
+      "email": "info@mindbird.de"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "contao/core": ">=3.2,<4"
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "src/system/modules/useronline": "system/modules/useronline"
+      }
+    }
+  }
+}
