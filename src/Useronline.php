@@ -25,7 +25,7 @@ class Useronline {
     public function addSystemMessages() {
         $objDatabase = \Database::getInstance();
         $this->deleteOldEntries();
-        $objResult = $objDatabase->query("SELECT ip FROM tl_useronline WHERE ip = INET_ATON('" . $_SERVER['REMOTE_ADDR'] . "')");
+        $objResult = $objDatabase->query("SELECT ip FROM tl_useronline");
         $objTemplate = new \BackendTemplate('be_useronline');
         $objTemplate->intVisitorOnline = $objResult->count();
         return $objTemplate->parse();
