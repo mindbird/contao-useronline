@@ -1,10 +1,10 @@
 {
-  "name": "mindbird/contao-useronline",
-  "description": "Gibt eine kurze Übersicht wie viele Benutzer in den letzten 5 Minuten auf der Webseite aktiv waren.",
+  "name": "mindbird/contao-useronlinee",
+  "description": "Gibt eine kurze Übersicht wie viele Benutzer in den letzten 5 Minuten auf der Webseite aktiv warenn.",
   "minimum-stability": "stable",
   "license": "proprietary",
-  "keywords":["contao", "user", "online", "website"],
-  "type":"contao-module",
+  "keywords": ["contao", "user", "online", "website"],
+  "type": "contao-module",
   "authors": [
     {
       "name": "mindbird",
@@ -18,8 +18,16 @@
   "extra": {
     "contao": {
       "sources": {
-        "src/system/modules/useronline": "system/modules/useronline"
+        "contao": "system/modules/useronline"
       }
     }
+  },
+  "autoload": {
+    "psr-4": {
+      "Useronline\\": "src/"
+    }
+  },
+  "replace": {
+    "contao-legacy/useronline": "self.version"
   }
 }
