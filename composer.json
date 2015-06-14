@@ -1,6 +1,6 @@
 {
-  "name": "mindbird/contao-useronlinee",
-  "description": "Gibt eine kurze Übersicht wie viele Benutzer in den letzten 5 Minuten auf der Webseite aktiv warenn.",
+  "name": "mindbird/contao-useronline",
+  "description": "Gibt eine kurze Übersicht wie viele Benutzer in den letzten 5 Minuten auf der Webseite aktiv waren.",
   "minimum-stability": "stable",
   "license": "proprietary",
   "keywords": ["contao", "user", "online", "website"],
