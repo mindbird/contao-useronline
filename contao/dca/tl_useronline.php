@@ -27,7 +27,7 @@ $GLOBALS['TL_DCA']['tl_useronline'] = array(
             'sql' => "int(10) unsigned NOT NULL auto_increment"
         ),
         'ip' => array(
-            'sql' => "int(10) unsigned NOT NULL default '0'"
+            'sql' => "int(10) unsigned NULL"
         ),
         'tstamp' => array(
             'sql' => "int(10) unsigned NOT NULL default '0'"
